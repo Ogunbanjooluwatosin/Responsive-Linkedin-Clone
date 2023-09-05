@@ -68,10 +68,23 @@ If you encounter any issues or have suggestions for improvements, please open an
 
 
 **Project Demo Picture**
-**Home**
-![index.html](https://drive.google.com/file/d/1_58o9pdLwgsRzes6bF4YD2YNwlGSBRui/view?usp=sharing)
+**Home Page**
+![index.html](https://drive.google.com/uc?export=download&id=1_58o9pdLwgsRzes6bF4YD2YNwlGSBRui)
 
-**Profile**
+**Profile Page**
+
+
+![profile.html1](https://drive.google.com/uc?export=download&id=17rocyeePTsbZ5El0u7d6-przwPtfcWSF)
+![profile.html2](https://drive.google.com/uc?export=download&id=1mt6PN6HhaZSmzIwxBQiak2IkGsrJkE36)
+![profile.html3](https://drive.google.com/uc?export=download&id=1TYxzIuH66EzbuRoJJL-hPtdxR97XvE-P)
+![profile.html4](https://drive.google.com/uc?export=download&id=1rW5pNWD9UtNBa69rGRrDyGUTz54LDM3A)
+
+
+
+**Project Demo Picture**
+[![LinkedIn Project Video](https://drive.google.com/file/d/1mNLIwFUJwvqaooBmtXavGS7_udBD6sS9/preview)](https://drive.google.com/file/d/1mNLIwFUJwvqaooBmtXavGS7_udBD6sS9/preview)
+
+Watch this video to see the key features of our project in action.
 
 
 
