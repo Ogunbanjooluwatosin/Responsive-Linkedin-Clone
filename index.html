@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+        <link rel="icon" href="images/">
+        <link rel="stylesheet" href="style.css">
+    
+</head>
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="logo-image"></a>
+        <div class="search_box">
+            <img src="images/search.png">
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+    <div class="navbar-center">
+        <ul>
+            <li><a href="#" class="active-link"><img src="images/home.png" alt="home"><span>Home</span></a></li>
+            <li><a href="#"><img src="images/network.png" alt="home"><span>My Network</span></a></li>
+            <li><a href="#"><img src="images/jobs.png" alt="home"><span>Jobs</span></a></li>
+            <li><a href="#"><img src="images/message.png" alt="home"><span>Messaging</span></a></li>
+            <li><a href="#"><img src="images/notification.png" alt="home"><span>Notifications</span></a></li>
+
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <div class="online">
+            <img src="images/user-1.png" alt="user-1" class="nav-profile-img" onclick="toggleMenu()">
+        </div>
+    </div>
+            <!-- profile dropdown menu. -->
+    <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+            <div class="user-info">
+                <img src="images/user-1.png" alt="user-1">
+                <div>
+                    <h3>James Foxx</h3>
+                    <a href="profile.html">See your profile</a>
+                </div>
+            </div>
+            <hr>
+            <a href="#" class="profile-menu-link">
+                <img src="images/feedback.png" alt="feedback">
+                <p>Give Feedback</p>
+                <span>></span>
+            </a>
+
+            <a href="#" class="profile-menu-link">
+                <img src="images/setting.png" alt="setting">
+                <p> Setting & Privacy</p>
+                <span>></span>
+            </a>
+
+            <a href="#" class="profile-menu-link">
+                <img src="images/help.png" alt="help">
+                <p>Help & Support</p>
+                <span>></span>
+            </a>
+
+            <a href="#" class="profile-menu-link">
+                <img src="images/display.png" alt="display">
+                <p>Display & Accesibility</p>
+                <span>></span>
+            </a>
+
+            <a href="#" class="profile-menu-link">
+                <img src="images/logout.png" alt="logout">
+                <p>Logout</p>
+                <span>></span>
+            </a>
+        </div>
+    </div>
+</nav>
+    <!-- =======================navbar-close========================== -->
+    <div class="container">
+        <!-- ==========left-sidebar======== -->
+        <div class="left-sidebar">
+                <div class="sidebar-profile-box">
+                    <img src="images/cover-pic.png" width="100%" alt="cover-image">
+                    <div class="sidebar-profile-info">
+                        <img src="images/user-1.png" alt="user-image">
+                        <h1>James Foxx</h1>
+                        <h3>Founder and CEO at Gallelio Group | Angel Investor</h3>
+                        <ul>
+                        <li>Your profile views<span>52</span></li>
+                        <li>Your post views<span>845</span></li>
+                        <li>Your connections<span>502</span></li>
+
+                    </ul>
+                    </div>
+                    <div class="sidebar-profile-link">
+                        <a href=""><img src="images/items.png">My items</a>
+                        <a href=""><img src="images/premium.png">Try Premium</a>
+                    </div>
+                </div>
+                <div class="sidebar-activity" id="sidebarActivity">
+                    <h3>RECENT</h3>
+                    <a href="#"><img src="images/recent.png">Web Development</a>
+                    <a href="#"><img src="images/recent.png">User Interface</a>
+                    <a href="#"><img src="images/recent.png">Online Learning</a>
+                    <a href="#"><img src="images/recent.png">Code Better</a>
+                    <a href="#"><img src="images/recent.png">Group Learning</a>
+                    <h3>GROUPS</h3>
+                    <a href="#"><img src="images/group.png">Web Design Group</a>
+                    <a href="#"><img src="images/group.png">HTML and CSS learners</a>
+                    <a href="#"><img src="images/group.png">Python and JavaScript Group</a>
+                    <a href="#"><img src="images/group.png">Learn Coding Online</a>
+                    <h3>HASHTAG</h3>
+                    <a href="#"><img src="images/hashtag.png">webdevelopment</a>
+                    <a href="#"><img src="images/hashtag.png">userinterface</a>
+                    <a href="#"><img src="images/hashtag.png">onlinelearning</a>
+                    <div class="discover-more-link">
+                    <a href="#">Discover more</a>
+                </div>
+
+                <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+                    
+            </div>
+        </div>
+        <!-- ==========main-content======== -->
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/user-1.png" alt="images">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png" alt="photo">Photo</li>
+                    <li><img src="images/video.png" alt="video">Video</li>
+                    <li><img src="images/event.png" alt="event">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span><img src="images/down-arrow.png" alt="down-arrow"></span></p>
+            </div>
+            <!-- First post -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-1.png" alt="user3">
+                    <div >
+                        <h1>James Foxx</h1>
+                        <small>Founder and CEO at Gallelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every website depends on search engine optimization  and digital marketing strategy.If you are on first page of all major search engines then you
+                    are ahead among your competitors
+                </p>
+                <img src="images/post-image-1.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="thumbsup">
+                        <img src="images/love.png" alt="love">
+                        <img src="images/clap.png" alt="clap">
+                        <span class="liked-users">Ogunbanjo Tosin and 45 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="like-image">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="comment">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="share">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="like-image">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div> 
+            <!-- Second post-->
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-2.png" alt="user3">
+                    <div >
+                        <h1>Benedict Rose</h1>
+                        <small>UI/UX and Graphic Designer at TechGenius Solutions</small>                        </small>
+                        <small>4 hours ago</small>
+                    </div>
+                </div>
+                <p>Design plays a critical role in the world of web and software development. As developers, we often focus on writing clean and efficient code, but we must also consider the user experience and visual appeal of our products.
+                </p>
+                <img src="images/post-image-2.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="thumbsup">
+                        <img src="images/love.png" alt="love">
+                        <img src="images/clap.png" alt="clap">
+                        <span class="liked-users">Ogunbanjo Tosin and 45 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="like-image">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="comment">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="share">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="like-image">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div> 
+            <!-- Third post -->
+            <div class="post">    
+                <div class="post-author">
+                    <img src="images/user-3.png" alt="user3">
+                    <div >
+                        <h1>Florence Hopkins</h1>
+                        <small>Founder and CEO at Hopkins Group | Angel Investor</small>
+                        <small>6 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every website depends on search engine optimization  and digital marketing strategy.If you are on first page of all major search engines then you
+                    are ahead among your competitors
+                </p>
+                <img src="images/post-image-3.png" width="100%">
+                <div class="post-stats">
+                    <div> 
+                        <img src="images/thumbsup.png" alt="thumbsup">
+                        <img src="images/love.png" alt="love">
+                        <img src="images/clap.png" alt="clap">
+                        <span class="liked-users">Ogunbanjo Tosin and 45 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="like-image">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="comment">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="share">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="like-image">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>  
+            <!-- Fourth post -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.png" alt="user3">
+                    <div >
+                        <h1>Sandra Kohr</h1>
+                        <small>Data Analyst at TechCrunch</small>
+                        <small>21 hours ago</small>
+                    </div>
+                </div>
+                <p>At its core, data science involves collecting, processing, analyzing, and interpreting data to solve complex problems and make informed decisions. It encompasses a wide range of techniques, including data preprocessing, statistical analysis, machine learning, and data visualization.
+                </p>
+                <img src="images/post-image-4.png" width="100%">
+                <div class="post-stats">
+                    <div> 
+                        <img src="images/thumbsup.png" alt="thumbsup">
+                        <img src="images/love.png" alt="love">
+                        <img src="images/clap.png" alt="clap">
+                        <span class="liked-users">Ogunbanjo Tosin and 45 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png" alt="like-image">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png" alt="comment">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png" alt="share">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png" alt="like-image">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div</div>
+            </div>
+        </div>
+        <!-- ==========right sidebar======== -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/more.png" alt="info" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot; 11,903 readers</span>
+
+                <a href="#">Careers growing horizontally too</a>
+                <span>19h ago &middot; 4,567 readers</span>
+
+                <a href="#">Less work visa for US,more for UK</a>
+                <span>14h ago &middot; 45,961 readers</span>
+
+                <a href="#">More hiring = higher confidence</a>
+                <span>10h ago &middot; 10,105 readers</span>
+
+                <a href="#">Gutam Adani is the world's third richest man</a>
+                <span>2h ago &middot; 16,540 readers</span>
+
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="images/user-1.png" alt="user">
+                    <img src="images/mi-logo.png" alt="user">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accesibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+
+                <div class="copyright-msg">
+                    <img src="images/logo.png" alt="logo">
+                    <p>Linkedup &#169; 2023. All right reserved </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+
+    let profileMenu = document.getElementById("profileMenu");
+
+
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu");
+    }
+
+</script>
+
+
+<script>
+    let sideActivity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMoreLink");
+
+    function toggleActivity(){
+        sideActivity.classList.toggle("open-activity");
+        if(sideActivity.classList.contains("open-activity")){
+            moreLink.innerHTML="Show Less <b>-</b>";
+        }
+        else{
+            moreLink.innerHTML="Show More <b>+</b>";
+        }
+    }
+</script>
+</body>
+</html>
