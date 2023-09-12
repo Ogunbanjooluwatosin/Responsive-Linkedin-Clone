@@ -81,7 +81,7 @@ If you encounter any issues or have suggestions for improvements, please open an
 
 
 
-**Project Demo Picture**
+**Project Demo Video**
 [![LinkedIn Project Video](https://drive.google.com/file/d/1mNLIwFUJwvqaooBmtXavGS7_udBD6sS9/preview)](https://drive.google.com/file/d/1mNLIwFUJwvqaooBmtXavGS7_udBD6sS9/preview)
 
 Watch this video to see the key features of our project in action.
